@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>our friend text-border in action</title>
+    <style>
+        body {
+            font-family: "Fira", Helvetica, Arial, sans-serif;
+            margin: 0;
+            text-align: center;
+            color: #6b6b6b;
+        }
+        html {
+            cursor: url('sun-40x.png'), auto;
+        }
+        
+        .example1 {
+            top : 75px;
+            left: 400px;
+            position: absolute;
+        }
+        .example2 {
+            top : 200px;
+            left: 200px;
+            position: absolute;
+        }
+    </style>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="../source/moving-shadow.js"></script>
+</head>
+<body>
+    <p>
+        <span class="example1">Some example text</span>
+        <span class="example2">Additional example text</span>
+    </p>
+    <script>
+    
+    $(".example1").giveMovingShadow();
+    $(".example2").giveMovingShadow();
+    </script>
+</body>
